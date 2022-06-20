@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: YELLOWGREEN;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.pi.project.view.message.multipleMessaging.MultipleToUsersController">
+   <children>
+      <TextArea fx:id="usernamesArea" editable="false" layoutX="82.0" layoutY="135.0" prefHeight="215.0" prefWidth="745.0" promptText="Users">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="usernameField" layoutX="81.0" layoutY="396.0" prefHeight="37.0" prefWidth="651.0" promptText="Enter username">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="messageArea" layoutX="81.0" layoutY="508.0" prefHeight="86.0" prefWidth="651.0" promptText="Message">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="734.0" layoutY="508.0" mnemonicParsing="false" onAction="#send" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: BLACK;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="734.0" layoutY="557.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="37.0" prefWidth="95.0" style="-fx-background-color: BLACK;" text="Image" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="734.0" layoutY="396.0" mnemonicParsing="false" onAction="#add" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: BLACK;" text="add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="82.0" layoutY="366.0" text="Add username that you want the message be sent to:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="107.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="🡰">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+      <Label fx:id="chatNameLabel" alignment="CENTER" layoutX="202.0" prefHeight="114.0" prefWidth="505.0" text="Multiple users messaging">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="100.0" text="Users list:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="481.0" text="Enter the message:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="80.0" layoutY="440.0" text="Error" textFill="#ff0f0f">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="sentLabel" layoutX="757.0" layoutY="466.0" text="Sent!" textFill="#34bc2b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button focusTraversable="false" layoutX="746.0" layoutY="12.0" mnemonicParsing="false" onAction="#mainMenu" prefHeight="107.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="⌂">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="imageRect" arcHeight="5.0" arcWidth="5.0" height="86.0" layoutX="730.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="103.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: YELLOWGREEN;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.pi.project.view.myPage.EditInfoPageController">
+   <children>
+      <Label alignment="CENTER" layoutX="249.0" layoutY="1.0" prefHeight="108.0" prefWidth="403.0" text="Edit Info">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="160.0" text="Last Name:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="210.0" text="User Name:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="260.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="310.0" text="Birth Date:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="360.0" text="Phone Number:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="EPBRadioButton" layoutX="80.0" layoutY="606.0" mnemonicParsing="false" text="Everyone can see Email, Birth Date and Phone Number">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="firstNameField" layoutX="270.0" layoutY="110.0" prefHeight="39.0" prefWidth="346.0" promptText="First Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="80.0" layoutY="110.0" text="First Name:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastNameField" layoutX="270.0" layoutY="160.0" prefHeight="39.0" prefWidth="346.0" promptText="Last Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="userNameField" layoutX="270.0" layoutY="210.0" prefHeight="39.0" prefWidth="346.0" promptText="User Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phoneNumberField" layoutX="270.0" layoutY="360.0" prefHeight="39.0" prefWidth="346.0" promptText="Phone Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailField" layoutX="270.0" layoutY="260.0" prefHeight="39.0" prefWidth="346.0" promptText="Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="birthDateField" layoutX="270.0" layoutY="310.0" prefHeight="39.0" prefWidth="346.0" promptText="Birth Date ----/--/--">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="80.0" layoutY="410.0" text="Biography:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="784.0" layoutY="634.0" mnemonicParsing="false" onAction="#save" prefHeight="50.0" prefWidth="101.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="664.0" layoutY="349.0" mnemonicParsing="false" onAction="#removeImage" prefHeight="34.0" prefWidth="187.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="664.0" layoutY="294.0" mnemonicParsing="false" onAction="#changeImage" prefHeight="34.0" prefWidth="187.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Change" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="editInfoError" alignment="CENTER" layoutX="143.0" layoutY="637.0" prefHeight="45.0" prefWidth="604.0" textFill="#e13232">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="biographyArea" layoutX="270.0" layoutY="411.0" prefHeight="178.0" prefWidth="346.0" promptText="Biography">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="infoLabel" layoutX="791.0" layoutY="586.0" text="Saved!" textFill="#218043">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="107.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="🡰">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+      <Circle fx:id="profileCircle" fill="#ffffff00" layoutX="757.0" layoutY="177.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button focusTraversable="false" layoutX="769.0" layoutY="-1.0" mnemonicParsing="false" onAction="#mainMenu" prefHeight="107.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="⌂">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

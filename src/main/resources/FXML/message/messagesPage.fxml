@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: YELLOWGREEN;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.pi.project.view.message.MessagesPageController">
+   <children>
+      <Label alignment="CENTER" layoutX="292.0" layoutY="11.0" prefHeight="114.0" prefWidth="318.0" text="Messaging">
+         <font>
+            <Font size="63.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="107.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="🡰">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+      <Button fx:id="groupChatsButton" layoutX="270.0" layoutY="202.0" minHeight="50.0" mnemonicParsing="false" onAction="#groupChats" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: BLACK; -fx-background-radius: 50;" text="Group Chats" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="413.0" layoutY="148.0" text="Chats">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="directChatsButton" layoutX="455.0" layoutY="202.0" minHeight="50.0" mnemonicParsing="false" onAction="#directChats" prefWidth="170.0" style="-fx-background-color: BLACK; -fx-background-radius: 50;" text="Direct Chats" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="329.0" layoutY="277.0" text="Multiple Messaging">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="toUsersButton" layoutX="270.0" layoutY="329.0" minHeight="50.0" mnemonicParsing="false" onAction="#toUsers" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: BLACK; -fx-background-radius: 50;" text="To Users" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="toGroupsButton" layoutX="455.0" layoutY="329.0" minHeight="50.0" mnemonicParsing="false" onAction="#toGroups" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: BLACK; -fx-background-radius: 50;" text="To Groups" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="238.0" layoutY="598.0" mnemonicParsing="false" onAction="#savedMessages" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: BLACK; -fx-background-radius: 50;" text="Saved Messages" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="351.0" layoutY="416.0" text="Contact Groups:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="toUsersButton1" layoutX="391.0" layoutY="465.0" minHeight="40.0" mnemonicParsing="false" onAction="#showGroups" prefWidth="120.0" style="-fx-background-color: BLACK; -fx-background-radius: 50;" text="Groups" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="453.0" layoutY="598.0" mnemonicParsing="false" onAction="#savedTweets" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: BLACK; -fx-background-radius: 50;" text="Saved tweets" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button focusTraversable="false" layoutX="754.0" layoutY="12.0" mnemonicParsing="false" onAction="#mainMenu" prefHeight="107.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="⌂">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" layoutX="490.0" layoutY="566.0" text="No saved tweets!" textFill="#ff1818">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

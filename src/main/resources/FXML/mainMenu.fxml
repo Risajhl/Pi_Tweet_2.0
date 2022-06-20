@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: YELLOWGREEN;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.pi.project.view.MainMenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="292.0" layoutY="27.0" prefHeight="114.0" prefWidth="318.0" text="Main Menu">
+         <font>
+            <Font size="63.0" />
+         </font>
+      </Label>
+      <Button fx:id="myPageButton" layoutX="341.0" layoutY="141.0" mnemonicParsing="false" onAction="#myPage" prefHeight="87.0" prefWidth="219.0" style="-fx-background-radius: 45; -fx-background-color: BLACK;" text="My Page" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="timeLineButton" layoutX="341.0" layoutY="241.0" mnemonicParsing="false" onAction="#timeLine" prefHeight="87.0" prefWidth="219.0" style="-fx-background-radius: 45; -fx-background-color: BLACK;" text="Time Line" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="explorerButton" layoutX="341.0" layoutY="341.0" mnemonicParsing="false" onAction="#explorer" prefHeight="87.0" prefWidth="219.0" style="-fx-background-radius: 45; -fx-background-color: BLACK;" text="Explorer" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="messagesButton" layoutX="341.0" layoutY="441.0" mnemonicParsing="false" onAction="#messages" prefHeight="87.0" prefWidth="219.0" style="-fx-background-radius: 45; -fx-background-color: BLACK;" text="Messages" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="settingsButton" layoutX="341.0" layoutY="541.0" mnemonicParsing="false" onAction="#settings" prefHeight="87.0" prefWidth="219.0" style="-fx-background-radius: 45; -fx-background-color: BLACK;" text="Settings" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" layoutX="581.0" layoutY="270.0" text="Time Line is empty! :(" textFill="#f83d3d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

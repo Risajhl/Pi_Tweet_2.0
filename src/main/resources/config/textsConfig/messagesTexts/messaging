@@ -1,0 +1,16 @@
+noSavedTweets=No saved tweets!
+groupMade=Group has been successfully made!
+groupNotFound=You don't have a group with this name!
+userNotFound=User can not be found!
+takenGroupName=You already have a group with this name!
+groupChatMade=Group chat has been successfully made!
+ff=At least one of you need to be following the other one!
+itsU=You can't send message for yourself!\nYou can do it in savedMessages
+chosenUser=You have already chosen this user!
+atLeastOne=You need to add at least one person!
+emptyGroup=This group is empty!
+cantAddUrself=You can not add yourself!
+urIn=You are already in the group chat!
+cantEditForwarded=You can't edit a forwarded message!
+deletedMessage=DELETED MESSAGE
+emptyText=You can not send empty text!

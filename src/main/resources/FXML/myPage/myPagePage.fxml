@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: yellowgreen;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.pi.project.view.myPage.MyPagePageController">
+   <children>
+      <Button focusTraversable="false" layoutX="-22.0" layoutY="-8.0" mnemonicParsing="false" onAction="#back" prefHeight="107.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="🡰">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+      <Circle fx:id="profileCircle" layoutX="106.0" layoutY="203.0" radius="82.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="userNameLabel" focusTraversable="false" layoutX="202.0" layoutY="120.0" prefHeight="51.0" prefWidth="320.0" text="risajhl">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" focusTraversable="false" layoutX="202.0" layoutY="166.0" prefHeight="31.0" prefWidth="320.0" text="Parisa Izadimand">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" focusTraversable="false" layoutX="522.0" layoutY="120.0" prefHeight="31.0" prefWidth="350.0" text="Email:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumberLabel" focusTraversable="false" layoutX="522.0" layoutY="145.0" prefHeight="31.0" prefWidth="376.0" text="Phone Number:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthDateLabel" focusTraversable="false" layoutX="522.0" layoutY="170.0" prefHeight="31.0" prefWidth="350.0" text="Birth Date:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="202.0" layoutY="197.0" text="Biography:">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="biographyArea" editable="false" focusTraversable="false" layoutX="342.0" layoutY="208.0" prefHeight="155.0" prefWidth="514.0" promptText="Biography">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="followersNumLabel" alignment="CENTER" focusTraversable="false" layoutX="44.0" layoutY="334.0" prefHeight="31.0" prefWidth="114.0" text="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="followingsNumLabel" alignment="CENTER" focusTraversable="false" layoutX="194.0" layoutY="334.0" prefHeight="31.0" prefWidth="122.0" text="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="followersButton" focusTraversable="false" layoutX="39.0" layoutY="292.0" mnemonicParsing="false" onAction="#followers" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Followers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="followingsButton" focusTraversable="false" layoutX="192.0" layoutY="292.0" mnemonicParsing="false" onAction="#followings" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Followings" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="editButton" focusTraversable="false" layoutX="90.0" layoutY="14.0" mnemonicParsing="false" onAction="#editInfo" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Edit Profile" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="notificationsButton" focusTraversable="false" layoutX="570.0" layoutY="14.0" mnemonicParsing="false" onAction="#notifications" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Notifcations" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="tweetsButton" focusTraversable="false" layoutX="690.0" layoutY="14.0" mnemonicParsing="false" onAction="#tweets" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Tweets" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="blackListButton" focusTraversable="false" layoutX="210.0" layoutY="14.0" mnemonicParsing="false" onAction="#blackList" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Black List" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="requestsButton" focusTraversable="false" layoutX="450.0" layoutY="14.0" mnemonicParsing="false" onAction="#requests" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Requests" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <TextArea fx:id="tweetArea" focusTraversable="false" layoutX="43.0" layoutY="378.0" prefHeight="130.0" prefWidth="814.0" promptText="New tweet">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="uploadImage" focusTraversable="false" layoutX="44.0" layoutY="516.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Upload Image" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="newTweetButton" focusTraversable="false" layoutX="806.0" layoutY="516.0" mnemonicParsing="false" onAction="#newTweet" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100; -fx-background-color: black;" text="✓" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" focusTraversable="false" layoutX="605.0" layoutY="77.0" text="No Tweets to be shown!! :(" textFill="#d73737">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="pendingsButton" focusTraversable="false" layoutX="330.0" layoutY="14.0" mnemonicParsing="false" onAction="#pendings" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Pendings" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Rectangle fx:id="imageRect" arcHeight="5.0" arcWidth="5.0" height="173.0" layoutX="182.0" layoutY="516.0" stroke="WHITE" strokeType="INSIDE" width="194.0" />
+      <Button focusTraversable="false" layoutX="790.0" layoutY="-24.0" mnemonicParsing="false" onAction="#mainMenu" prefHeight="107.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="⌂">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
